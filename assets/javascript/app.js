@@ -11,7 +11,9 @@ var apikey = "244ce6d25dc544d2b9ef69153389dd56";
 var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
 // get the value of search, records, start, and end fields
-$search.on("click", function() {
+$search.on("click", function(event) {
+    event.preventDefault();
+
     var term = $term.val();
     var records = $records.val();
     var start = $start.val();
