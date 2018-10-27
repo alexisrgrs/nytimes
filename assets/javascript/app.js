@@ -13,7 +13,11 @@ $search.on("click", function() {
     $records.val()
     $start.val()
     $end.val()
+
+    console.log($term.val());
 })
+
+
 
 // make an api call based off those values
 // make an element with the api value
